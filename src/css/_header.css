@@ -16,7 +16,7 @@ a:hover, .search-icon:hover, .cart-icon:hover, .account-icon:hover, .hamburger-i
     display: flex;
     align-items: flex-end;
     font-size: var(--font-size-primary);
-    margin: 1rem;
+    margin: var(--margin-primary);
   }
   
   .logo img {

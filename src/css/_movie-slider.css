@@ -1,0 +1,17 @@
+.movie-slider {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: var(--margin-primary);
+    padding: 1rem 1.5rem;
+  }
+  
+  .movie-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .arrows {
+    font-size: 1.5rem;
+  }

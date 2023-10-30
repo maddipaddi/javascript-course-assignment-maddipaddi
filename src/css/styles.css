@@ -5,6 +5,7 @@
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
 @import url(./_header.css);
+@import url(./_movie-slider.css);
 
 body {
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,3 +25,4 @@ a {
   text-decoration: none;
   color: var(--color-primary);
 }
+
