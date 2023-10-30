@@ -1,0 +1,25 @@
+.selling-points {
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin-primary);
+    padding: 1rem 1.5rem;
+  }
+  
+  .selling-points h1 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .emphasis {
+    color: var(--color-accent)
+  }
+  
+  .selling-points p, ul {
+    margin: 0 0 1rem;
+  }
+  
+  .selling-points li {
+    margin: 1rem;
+  }
+  
+  
