@@ -17,3 +17,47 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+
+
+nav, #menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo img {
+  width: 9rem;
+}
+
+.hamburger-icon {
+  margin: 0 0.5rem;
+}
+
+nav ul {
+  position: absolute;
+  list-style-type: none;
+}
+
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+.current {
+  border-bottom: solid;
+}
