@@ -8,6 +8,7 @@
 @import url(./_movie-slider.css);
 @import url(./_selling-points.css);
 @import url(./_buttons.css);
+@import url(./_featured.css);
 
 body {
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,31 +23,3 @@ a {
 }
 
 
-.featured-collections {
-  display: flex; 
-  flex-direction: column;
-  margin: var(--margin-primary);
-  padding: 1rem;
-  gap: 1rem; 
-}
-
-.featured-category {
- display: flex; 
- gap: 1rem; 
- flex-wrap: wrap;
-
-}
-
-.container {
-  flex: 1 0 100px;
-}
-
-.container img {
-  width: 100%;
-  height: 100%; 
-  border-radius: 1rem; 
-}
-
-.featured-collections h2, h3 {
-  margin: 1rem 0 0; 
-}
