@@ -1,6 +1,5 @@
 a:hover, .search-icon:hover, .cart-icon:hover, .account-icon:hover, .hamburger-icon:hover {
     font-weight: bold;  
-    font-size: var(--font-size-focus);
   }
   
   nav, #menu-checkbox {
