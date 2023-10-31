@@ -29,6 +29,7 @@ a:hover, .search-icon:hover, .cart-icon:hover, .account-icon:hover, .hamburger-i
   
   nav ul {
     position: absolute;
+    background-color: var(--color-secondary);
     list-style-type: none;
     padding: 0;
     min-width: 10rem;

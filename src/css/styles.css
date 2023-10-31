@@ -32,9 +32,10 @@ a {
   background-color: var(--color-accent);
   align-self: center; 
   padding: 0.5rem 0.75rem;
-  border-radius: 40%;
+  border-radius: 1em;
   font-size: 1em;
   font-weight: bold;
+  box-shadow: var(--drop-shadow-accent);
 }
 
 

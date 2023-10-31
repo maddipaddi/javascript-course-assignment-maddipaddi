@@ -2,7 +2,10 @@
     display: flex;
     flex-direction: column;
     margin: var(--margin-primary);
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1rem;
+    background-color: var(--color-tertiary);
+    box-shadow: var(--drop-shadow-primary);
+    border-radius: 1rem;
   }
   
   .selling-points h1 {
@@ -11,7 +14,7 @@
   }
   
   .emphasis {
-    color: var(--color-accent)
+    color: var(--color-accent);
   }
   
   .selling-points p, ul {
