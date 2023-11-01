@@ -8,9 +8,8 @@
   
   .featured-category {
    display: flex; 
-   gap: 1rem; 
    flex-wrap: wrap;
-  
+   gap: 1rem; 
   }
   
   .container {
