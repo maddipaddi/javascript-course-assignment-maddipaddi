@@ -43,4 +43,10 @@
     text-align: center;
   }
   
+  .get-the-app p {
+    font-size: 2rem;
+  }
   
+  .logo-glasses {
+    align-self: flex-start;
+  }
