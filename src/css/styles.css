@@ -9,6 +9,7 @@
 @import url(./_selling-points.css);
 @import url(./_buttons.css);
 @import url(./_featured.css);
+@import url(./_footer.css);
 
 body {
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,13 +22,3 @@ a {
   text-decoration: none;
   color: var(--color-primary);
 }
-
-
-footer {
-  display: flex; 
-  flex-wrap: wrap;
-  gap: 1rem; 
-  padding: 1rem; 
-  align-items: flex-end;
-}
-
