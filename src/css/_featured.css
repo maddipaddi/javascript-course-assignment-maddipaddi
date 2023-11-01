@@ -1,15 +1,18 @@
-.featured-collections, .featured-filmmakers {
+  .featured-collections, .featured-filmmakers {
     display: flex; 
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
     margin: var(--margin-primary);
     padding: 1rem;
-    gap: 1rem; 
+    gap: 2rem; 
   }
-  
+
   .featured-category {
    display: flex; 
    flex-wrap: wrap;
-   gap: 1rem; 
+   gap: 1rem;
+   max-width: 30rem; 
   }
   
   .container {
@@ -39,6 +42,16 @@
     background-color: var(--color-tertiary);
     border-radius: 1rem;
     text-align: center;
+    max-width: 28rem;
+  }
+
+  .featured-filmmakers h2 {
+    width: 100%; 
+  }
+
+  .get-the-app {
+    max-height: 24rem;
+    max-width: 18rem;
   }
   
   .get-the-app p {

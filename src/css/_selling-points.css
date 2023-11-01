@@ -1,11 +1,14 @@
 .selling-points {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     margin: 1rem 1rem 2rem;
-    padding: 1.5rem 1rem;
+    padding: 2rem;
     background-color: var(--color-tertiary);
     box-shadow: var(--drop-shadow-primary);
     border-radius: 1rem;
+    max-width: 50rem; 
+    min-height: 20rem;
   }
   
   .selling-points h1 {
@@ -23,6 +26,7 @@
   
   .selling-points li {
     margin: 1rem;
+    font-size: 1.5em;
   }
   
   

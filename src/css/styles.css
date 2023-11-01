@@ -17,8 +17,16 @@ body {
   background-color: var(--color-secondary);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 a {
   text-decoration: none;
   color: var(--color-primary);
 }
+
+
+@import url(./_media-queries.css);

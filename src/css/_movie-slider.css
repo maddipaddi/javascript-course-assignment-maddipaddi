@@ -4,6 +4,7 @@
     align-items: center;
     margin: var(--margin-primary);
     padding: 1rem 1.5rem;
+    max-width: 32rem;
   }
   
   .arrows {
