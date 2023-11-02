@@ -13,7 +13,7 @@
 @import url(./_media-queries.css);
 
 body {
-  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-primary);
   background-color: var(--color-secondary);
 }
@@ -31,5 +31,25 @@ a {
 
 h2 {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
 }

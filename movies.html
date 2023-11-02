@@ -1,108 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movies - SquareEyes</title>
-  <meta name="description" content="Explore our extensive collection of movies here on SquareEyes."/>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-squareeyes-32x32.png"/>
-  <link rel="stylesheet" href="src/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/070454e239.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="./assets/images/squareeyes-logo.svg" alt="SquareEyes Logo"></a>
-    </div>
-    <input type="checkbox" id="menu-checkbox"/>
-    <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fa-solid fa-house"></i><span class="text">Home</span></a></li>
-        <li><a href="movies.html" class="current"><i class="fa-solid fa-film"></i><span class="text">Movies</span></a></li>
-        <li><a href="about.html"><i class="fa-solid fa-glasses"></i><span class="text">About us</span></a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i><span class="text">Contact us</span></a></li>
-        <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i><span class="text">Search</span></a></li>
-      </ul>
-    </nav>
-    <div class="icons">
-      <div class="search-icon">
-        <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies - SquareEyes</title>
+    <meta
+      name="description"
+      content="Explore our extensive collection of movies here on SquareEyes."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-squareeyes-32x32.png"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/070454e239.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./assets/images/squareeyes-logo.svg" alt="SquareEyes Logo"
+        /></a>
       </div>
-      <div class="account-icon">
-        <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa-solid fa-house"></i
+              ><span class="text">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="movies.html" class="current"
+              ><i class="fa-solid fa-film"></i
+              ><span class="text">Movies</span></a
+            >
+          </li>
+          <li>
+            <a href="about.html"
+              ><i class="fa-solid fa-glasses"></i
+              ><span class="text">About us</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope"></i
+              ><span class="text">Contact us</span></a
+            >
+          </li>
+          <li>
+            <a href="search.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+              ><span class="text">Search</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <div class="search-icon">
+          <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="account-icon">
+          <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
       </div>
-      <div class="cart-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-  </header>
-  <main>
-    <h1>Movies</h1>
-    <p>Filter by...</p>
-        <p>Genre</p>
-        <p>Filmmaker</p>
-        <p>IMBd ratings</p>
-        <p>A-Z</p>
-        <section>
+    </header>
+    <main>
+      <h1>Movies</h1>
+      <section class="filter">
+        <h2>Filter by...</h2>
+        <div class="flex">
+          <div class="flex-item">
+            <label for="genre">Genre:</label>
+            <select name="genre" id="genre">
+              <option value="select">Select</option>
+              <option value="Action">Action</option>
+              <option value="Anime">Anime</option>
+              <option value="Classics">Classics</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Documentaries">Documentaries</option>
+              <option value="Drama">Drama</option>
+              <option value="Fantasy">Fantas</option>
+              <option value="Horror">Horror</option>
+              <option value="Musicals">Musicals</option>
+              <option value="Romance">Romance</option>
+              <option value="Sci-fi">Sci-fi</option>
+            </select>
+          </div>
+          <div class="flex-item">
+            <label for="filmmaker">Filmmaker:</label>
+            <select name="filmmaker" id="filmmaker">
+              <option value="select">Select</option>
+              <option value="Alvis Arrera">Alvis Arrera</option>
+              <option value="Bong Joon Ho">Bong Joon Ho</option>
+              <option value="Cristopher Nolan">Cristopher Nolan</option>
+              <option value="David Lynch">David Lynch</option>
+              <option value="Greta Gerwig">Greta Gerwig</option>
+              <option value="Liz Morgan">Liz Morgan</option>
+              <option value="Lynne Ramsay">Lynne Ramsay</option>
+              <option value="Kathryn Bigelow">Kathryn Bigelow</option>
+              <option value="Will Wandertrust">Will Wandertrust</option>
+            </select>
+          </div>
+          <div class="flex-item">
+            <label for="imbd-ratings">IMbd Ratings:</label>
+            <select name="imbd-ratings" id="imbd-ratings">
+              <option value="select">Select</option>
+              <option value="1-2stars">1-2 Stars</option>
+              <option value="3-4stars">3-4 Stars</option>
+              <option value="4-5stars">4-5 Stars</option>
+              <option value="6-7stars">6-7 Stars</option>
+              <option value="7-8stars">7-8 Stars</option>
+              <option value="8-10stars">8-10 Stars</option>
+              <option value="9-10stars">9-10 Stars</option>
+            </select>
+          </div>
+          <div class="flex-item">
+            <label for="A-Z">A-Z:</label>
+            <select name="A-Z" id="A-Z">
+              <option value="select">Select</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="H">H</option>
+              <option value="I">I</option>
+              <option value="J">J</option>
+              <option value="K">K</option>
+              <option value="L">L</option>
+              <option value="M">M</option>
+              <option value="N">N</option>
+              <option value="O">O</option>
+              <option value="P">P</option>
+              <option value="Q">Q</option>
+              <option value="R">R</option>
+              <option value="S">S</option>
+              <option value="T">T</option>
+              <option value="U">U</option>
+              <option value="V">V</option>
+              <option value="W">W</option>
+              <option value="X">X</option>
+              <option value="Y">Y</option>
+              <option value="Z">Z</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section>
         <h2>Featured Movies</h2>
         <div class="featured-movies">
-        <div class="featured-category">
-        <div class="container">
-        <a href="#"><img src="./assets/images/oppenheimer.jpg" alt="Oppenheimer movie poster"></a>
+          <div class="featured-category">
+            <div class="container">
+              <a href="#"
+                ><img
+                  src="./assets/images/oppenheimer.jpg"
+                  alt="Oppenheimer movie poster"
+              /></a>
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/john-wick-chapter-4.jpg"
+                alt="John Wick movie poster"
+              />
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/onceuponatimeinhollywood.jpg"
+                alt="Once Upon a Time in Hollywood movie poster"
+              />
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/the-batman.jpg"
+                alt="Batman movie poster"
+              />
+            </div>
+          </div>
+          <div class="featured-category">
+            <div class="container">
+              <img
+                src="./assets/images/spider-man-across-the-spider-verse.jpg"
+                alt="Spider-Man Across the Spider-Verse movie poster"
+              />
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/the-addams-family.jpg"
+                alt="The Addams Family Halloween movie poster"
+              />
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/toystory4.jpg"
+                alt="Toy Story 4 movie poster"
+              />
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/puss-in-boots-the-last-wish.jpg"
+                alt="Puss in Boots The Last Wish movie poster"
+              />
+            </div>
+          </div>
+          <div class="featured-category">
+            <div class="container">
+              <img src="./assets/images/barbie.jpg" alt="Barbie movie poster" />
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/guardians-of-the-galaxy-vol-3.jpg"
+                alt="Guardians of the Galaxy volume 3 movie poster"
+              />
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/godzilla-king-of-the-monsters.jpg"
+                alt="Godzilla movie poster"
+              />
+            </div>
+            <div class="container">
+              <img
+                src="./assets/images/scream.jpg"
+                alt="Scream 6 movie poster"
+              />
+            </div>
+          </div>
         </div>
-        <div class="container">
-        <img src="./assets/images/john-wick-chapter-4.jpg" alt="John Wick movie poster">
-        </div>
-        <div class="container">
-        <img src="./assets/images/onceuponatimeinhollywood.jpg" alt="Once Upon a Time in Hollywood movie poster">
-        </div>
-        <div class="container">
-        <img src="./assets/images/the-batman.jpg" alt="Batman movie poster">
-        </div>
-        </div>
-        <div class="featured-category">
-        <div class="container">
-        <img src="./assets/images/spider-man-across-the-spider-verse.jpg" alt="Spider-Man Across the Spider-Verse movie poster">
-        </div>
-        <div class="container">
-        <img src="./assets/images/the-addams-family.jpg" alt="The Addams Family Halloween movie poster">
-        </div>
-        <div class="container">
-        <img src="./assets/images/toystory4.jpg" alt="Toy Story 4 movie poster">
-        </div>
-        <div class="container">
-        <img src="./assets/images/puss-in-boots-the-last-wish.jpg" alt="Puss in Boots The Last Wish movie poster">
-        </div>
-        </div>
-        <div class="featured-category">
-        <div class="container">
-        <img src="./assets/images/barbie.jpg" alt="Barbie movie poster">
-        </div>
-        <div class="container">
-        <img src="./assets/images/guardians-of-the-galaxy-vol-3.jpg" alt="Guardians of the Galaxy volume 3 movie poster">
-        </div>
-        <div class="container">
-        <img src="./assets/images/godzilla-king-of-the-monsters.jpg" alt="Godzilla movie poster">
-        </div>
-        <div class="container">
-        <img src="./assets/images/scream.jpg" alt="Scream 6 movie poster">
-        </div>
-        </div>
-    </div>
-        </section> 
-  </main>
-  <footer>
-    <div class="logo">
-      <a href="index.html"><img src="./assets/images/squareeyes-logo.svg" alt="SquareEyes Logo"></a>
-    </div>
-    <a href="contact.html">Contact us</a>
-    <a href="about.html">About us</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Contact Policy</a>
-  </footer>
-</body>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./assets/images/squareeyes-logo.svg" alt="SquareEyes Logo"
+        /></a>
+      </div>
+      <a href="contact.html">Contact us</a>
+      <a href="about.html">About us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Policy</a>
+    </footer>
+  </body>
 </html>
