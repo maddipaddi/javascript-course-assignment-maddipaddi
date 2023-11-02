@@ -1,4 +1,4 @@
-  .featured-collections, .featured-filmmakers {
+  .featured-collections, .featured-filmmakers, .featured-movies {
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -62,3 +62,14 @@
   .logo-glasses {
     align-self: flex-start;
   }
+
+
+  .featured-movies .featured-category {
+    max-width: 100%;
+  }
+
+  .featured-movies .container {
+    flex: 1 1 300px; 
+    padding: 1rem;
+  }
+
