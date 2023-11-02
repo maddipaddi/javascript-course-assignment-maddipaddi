@@ -13,39 +13,48 @@ a:hover, .search-icon:hover, .cart-icon:hover, .account-icon:hover, .hamburger-i
   
   header {
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
+    justify-content: space-evenly;
     font-size: var(--font-size-primary);
     margin: var(--margin-primary);
+
+  }
+
+  .logo {
+    padding: 1rem; 
+    max-width: fit-content;
   }
   
   .logo img {
-    width: 9rem;
+    max-width: 9rem;
   }
   
   .hamburger-icon {
-    margin: 0 0.5rem 0 4rem;
+   margin-left: 2rem;
   }
   
   nav ul {
     position: absolute;
     background-color: var(--color-secondary);
     list-style-type: none;
-    padding: 0;
+    gap: 1rem;
+    padding: 1rem;
     min-width: 10rem;
   }
   
   nav li {
-    margin: 0.75rem;
+    margin: 1rem;
   }
   
   .text {
     margin-left: 0.5rem;
   }
   
+  
   .icons {
     display: flex;
-    gap: 0.75rem;
-    margin-left: 0.25rem;
+    gap: 1rem;
+    padding: 1rem;
   }
   
   
