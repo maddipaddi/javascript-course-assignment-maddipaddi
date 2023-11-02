@@ -28,5 +28,9 @@ a {
   color: var(--color-primary);
 }
 
+h2 {
+  display: flex;
+  justify-content: center; 
+}
 
 @import url(./_media-queries.css);
