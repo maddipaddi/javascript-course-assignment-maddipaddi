@@ -1,21 +1,27 @@
 /* Use import to split up your CSS into manageable chunks */
-@import url("./_reset.css");
+@import url("./reset.css");
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("./_variables.css");
+@import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
-@import url(./_header.css);
-@import url(./_movie-slider.css);
-@import url(./_selling-points.css);
-@import url(./_buttons.css);
-@import url(./_featured.css);
-@import url(./_footer.css);
-@import url(./_media-queries.css);
+@import url(./header.css);
+@import url(./movie-slider.css);
+@import url(./selling-points.css);
+@import url(./buttons.css);
+@import url(./featured.css);
+@import url(./footer.css);
+@import url(./movies-page.css);
+@import url(./about-us.css);
+@import url(./font.css);
+@import url(./media-queries.css);
 
 body {
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-primary);
   background-color: var(--color-secondary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -29,27 +35,30 @@ a {
   color: var(--color-primary);
 }
 
+.flex-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-tertiary);
+  box-shadow: var(--drop-shadow-primary);
+  border-radius: 1rem;
+}
+
 h2 {
   display: flex;
   justify-content: center;
 }
 
-.filter {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 2rem;
+.search {
+  padding: 1rem 1rem 2rem;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
+.search > div > input {
+  padding: 0.5rem 4rem;
+  border-radius: 1rem;
 }
 
-.flex-item {
-  display: flex;
-  flex-direction: column;
+.search > div > button {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  border: none;
 }
