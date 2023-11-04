@@ -13,6 +13,7 @@
 @import url(./movies-page.css);
 @import url(./about-us.css);
 @import url(./font.css);
+@import url(./input-fields.css);
 @import url(./media-queries.css);
 
 body {
@@ -46,19 +47,4 @@ a {
 h2 {
   display: flex;
   justify-content: center;
-}
-
-.search {
-  padding: 1rem 1rem 2rem;
-}
-
-.search > div > input {
-  padding: 0.5rem 4rem;
-  border-radius: 1rem;
-}
-
-.search > div > button {
-  background-color: var(--color-tertiary);
-  color: var(--color-primary);
-  border: none;
 }

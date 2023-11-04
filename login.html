@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - SquareEyes</title>
-    <meta name="description" content="Contact SquareEyes." />
+    <title>Log In - SquareEyes</title>
+    <meta name="description" content="Log in to your account on SquareEyes." />
     <link
       rel="icon"
       type="image/png"
@@ -55,7 +55,7 @@
             >
           </li>
           <li>
-            <a href="contact.html" class="current"
+            <a href="contact.html"
               ><i class="fa-solid fa-envelope"></i
               ><span class="text">Contact us</span></a
             >
@@ -73,7 +73,9 @@
           <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
         <div class="account-icon">
-          <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="login.html" class="current"
+            ><i class="fa-solid fa-circle-user"></i
+          ></a>
         </div>
         <div class="cart-icon">
           <i class="fa-solid fa-cart-shopping"></i>
@@ -82,23 +84,18 @@
     </header>
     <main>
       <section class="flex-card">
-        <h1>Contact Us</h1>
+        <h1>Log in to your account</h1>
         <form>
           <div>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" />
           </div>
           <div>
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" />
           </div>
-          <div>
-            <label for="subject">Write your query here</label>
-            <textarea id="query" name="query"></textarea>
-          </div>
-          <button class="cta-button">Send</button>
-          <!--Look into how to get the labels inside the inputs like the figma design-->
-          <!--Also think about the responsiveness of someone entering into the field - label needs to move above for that and still be visible while typing-->
+          <button class="cta-button">Log in</button>
+          <p>Don't have an account? <a href="signup.html">Sign up now.</a></p>
         </form>
       </section>
     </main>
