@@ -13,6 +13,24 @@
   border: none;
 }
 
-input {
+input,
+select {
   padding: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  padding: 4rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.contact,
+.login,
+.signup {
+  padding: 1rem 4rem;
+}
+
+button {
+  border: none;
 }

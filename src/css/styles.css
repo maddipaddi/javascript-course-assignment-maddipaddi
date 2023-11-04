@@ -48,3 +48,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+.underline {
+  text-decoration: underline;
+}
