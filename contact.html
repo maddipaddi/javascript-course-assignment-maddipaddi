@@ -73,7 +73,9 @@
           <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
         <div class="account-icon">
-          <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="login.html" aria-labelledby="Log In"
+            ><i class="fa-solid fa-circle-user"></i
+          ></a>
         </div>
         <div class="cart-icon">
           <i class="fa-solid fa-cart-shopping"></i>
@@ -93,12 +95,10 @@
             <input type="text" id="subject" name="subject" />
           </div>
           <div class="flex-item">
-            <label for="subject">Write your query here</label>
+            <label for="query">Write your query here</label>
             <textarea id="query" name="query"></textarea>
           </div>
           <button class="cta-button">Send</button>
-          <!--Look into how to get the labels inside the inputs like the figma design-->
-          <!--Also think about the responsiveness of someone entering into the field - label needs to move above for that and still be visible while typing-->
         </form>
       </section>
     </main>
