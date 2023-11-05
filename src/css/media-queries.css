@@ -1,21 +1,26 @@
 @media (min-width: 600px) {
-   nav {
+  nav {
     display: flex;
-   }
+  }
 
-   nav ul {
+  nav ul {
     display: flex;
     flex-wrap: wrap;
-    position: relative; 
-    padding: 0; 
-    margin: 0; 
-   }
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
 
-   nav li {
+  nav li {
     margin: 0 1rem;
-   }
+  }
 
-   header label, .search-icon {
-    display: none; 
-   }
+  header label,
+  .search-icon {
+    display: none;
+  }
+
+  .hide-on-mobile {
+    display: block;
+  }
 }
