@@ -1,84 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SquareEyes</title>
-  <meta name="description" content="Buy and watch movies in one place."/>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-squareeyes-32x32.png"/>
-  <link rel="stylesheet" href="src/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/070454e239.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="./assets/images/squareeyes-logo.svg" alt="SquareEyes Logo"></a>
-    </div>
-    <input type="checkbox" id="menu-checkbox"/>
-    <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="current"><i class="fa-solid fa-house"></i><span class="text">Home</span></a></li>
-        <li><a href="movies.html"><i class="fa-solid fa-film"></i><span class="text">Movies</span></a></li>
-        <li><a href="about.html"><i class="fa-solid fa-glasses"></i><span class="text">About us</span></a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i><span class="text">Contact us</span></a></li>
-        <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i><span class="text">Search</span></a></li>
-      </ul>
-    </nav>
-    <div class="icons">
-      <div class="search-icon">
-        <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SquareEyes</title>
+    <meta name="description" content="Buy and watch movies in one place." />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-squareeyes-32x32.png"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/070454e239.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./assets/images/squareeyes-logo.svg" alt="SquareEyes Logo"
+        /></a>
       </div>
-      <div class="account-icon">
-        <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="current"
+              ><i class="fa-solid fa-house"></i
+              ><span class="text">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="movies.html"
+              ><i class="fa-solid fa-film"></i
+              ><span class="text">Movies</span></a
+            >
+          </li>
+          <li>
+            <a href="about.html"
+              ><i class="fa-solid fa-glasses"></i
+              ><span class="text">About us</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope"></i
+              ><span class="text">Contact us</span></a
+            >
+          </li>
+          <li>
+            <a href="search.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+              ><span class="text">Search</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <div class="search-icon">
+          <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="account-icon">
+          <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
       </div>
-      <div class="cart-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
+    </header>
+    <main>
+      <div class="movie-slider">
+        <i class="fa-solid fa-chevron-left arrows"></i>
+        <div class="container">
+          <img
+            src="./assets/images/onceuponatimeinhollywood.jpg"
+            alt="Once upon a time in hollywood movie poster"
+          />
+        </div>
+        <div class="container hide-on-mobile">
+          <img
+            src="./assets/images/fast-furious-presents-hobbs-shaw_pyjoc0x1.jpg"
+            alt="Hobbs and Shaw movie poster"
+          />
+        </div>
+        <div class="container hide-on-mobile">
+          <img
+            src="./assets/images/the-batman.jpg"
+            alt="The Batman movie poster"
+          />
+        </div>
+        <i class="fa-solid fa-chevron-right arrows"></i>
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="movie-slider">
-      <i class="fa-solid fa-chevron-left arrows"></i>
-      <div class="container">
-        <img src="./assets/images/onceuponatimeinhollywood.jpg" alt="Once upon a time in hollywood movie poster">
-      </div>
-      <div class="container hide-on-mobile">
-        <img src="./assets/images/fast-furious-presents-hobbs-shaw_pyjoc0x1.jpg" alt="Hobbs and Shaw movie poster">
-      </div>
-      <div class="container hide-on-mobile">
-        <img src="./assets/images/the-batman.jpg" alt="The Batman movie poster">
-      </div>
-      <i class="fa-solid fa-chevron-right arrows"></i>
-    </div>
-    <section class="selling-points flex-card">
-      <hgroup>
-        <h1>Square<span class="emphasis">Eyes</span></h1>
-        <p>Connecting Film-Lovers</p>
-      </hgroup>
-      <ul>
+      <section class="selling-points flex-card">
+        <hgroup>
+          <h1>Square<span class="emphasis">Eyes</span></h1>
+          <p>Connecting Film-Lovers</p>
+        </hgroup>
+        <ul>
           <li>Buy and watch movies in one place.</li>
           <li>Support small businesses - buy directly from filmmakers.</li>
-      </ul>
-      <a href="signup.html" class="cta-button">Sign Up</a>
-    </section>
-    <section>
-      <h2>Featured Collections</h2>
+        </ul>
+        <a href="signup.html" class="cta-button">Sign Up</a>
+      </section>
+      <section>
+        <h2>Featured Collections</h2>
         <div class="featured-collections">
           <div class="featured-category">
             <h3>Giant Monsters</h3>
             <div class="featured-category">
               <div class="container">
-                <img src="./assets/images/godzilla-king-of-the-monsters.jpg" alt="Godzilla movie poster">
+                <img
+                  src="./assets/images/godzilla-king-of-the-monsters.jpg"
+                  alt="Godzilla movie poster"
+                />
               </div>
               <div class="container">
-                <img src="./assets/images/jurassic-park.jpg" alt="Jurassic Park film still">
+                <img
+                  src="./assets/images/jurassic-park.jpg"
+                  alt="Jurassic Park film still"
+                />
               </div>
               <div class="container">
-                <img src="./assets/images/the-meg.jpg" alt="The Meg film still">
+                <img
+                  src="./assets/images/the-meg.jpg"
+                  alt="The Meg film still"
+                />
               </div>
             </div>
             <a href="#" class="cta-button lesser-cta">See Collection</a>
@@ -87,13 +145,22 @@
             <h3>Horror</h3>
             <div class="featured-category">
               <div class="container">
-                <img src="./assets/images/sweetheart.jpg" alt="Sweetheart movie poster">
+                <img
+                  src="./assets/images/sweetheart.jpg"
+                  alt="Sweetheart movie poster"
+                />
               </div>
               <div class="container">
-                <img src="./assets/images/scream.jpg" alt="Scream 6 movie poster">
+                <img
+                  src="./assets/images/scream.jpg"
+                  alt="Scream 6 movie poster"
+                />
               </div>
               <div class="container">
-                <img src="./assets/images/the-hills-have-eyes.jpg" alt="The Hills Have Eyes movie poster">
+                <img
+                  src="./assets/images/the-hills-have-eyes.jpg"
+                  alt="The Hills Have Eyes movie poster"
+                />
               </div>
             </div>
             <a href="#" class="cta-button lesser-cta">See Collection</a>
@@ -102,13 +169,22 @@
             <h3>Cult Classics</h3>
             <div class="featured-category">
               <div class="container">
-                <img src="./assets/images/the-crow.jpg" alt="The Crow film still">
+                <img
+                  src="./assets/images/the-crow.jpg"
+                  alt="The Crow film still"
+                />
               </div>
               <div class="container">
-                <img src="./assets/images/heathers.jpg" alt="Heathers film still">
+                <img
+                  src="./assets/images/heathers.jpg"
+                  alt="Heathers film still"
+                />
               </div>
               <div class="container">
-                <img src="./assets/images/jennifers-body.jpg" alt="Jennifer's Body film still">
+                <img
+                  src="./assets/images/jennifers-body.jpg"
+                  alt="Jennifer's Body film still"
+                />
               </div>
             </div>
             <a href="#" class="cta-button lesser-cta">See Collection</a>
@@ -117,52 +193,69 @@
             <h3>Dark Superheroes</h3>
             <div class="featured-category">
               <div class="container">
-                <img src="./assets/images/the-batman.jpg" alt="The Batman movie poster">
+                <img
+                  src="./assets/images/the-batman.jpg"
+                  alt="The Batman movie poster"
+                />
               </div>
               <div class="container">
-                <img src="./assets/images/constantine.jpg" alt="Constantine film still">
+                <img
+                  src="./assets/images/constantine.jpg"
+                  alt="Constantine film still"
+                />
               </div>
               <div class="container">
-                <img src="./assets/images/justice-league.jpg" alt="Zack Snyder's Justice League film still">
+                <img
+                  src="./assets/images/justice-league.jpg"
+                  alt="Zack Snyder's Justice League film still"
+                />
               </div>
             </div>
             <a href="#" class="cta-button lesser-cta">See Collection</a>
           </div>
-    </section>
-    <section class="featured-filmmakers">
-      <h2>Featured Filmmakers</h2>
-      <div class="filmmaker flex-card">
-        <div class="container profile">
-          <img src="./assets/images/Liz-filmmaker.jpg" alt="Young woman in front of film camera.">
         </div>
-        <h3>Liz Morgan</h3>
-        <a href="#" class="cta-button lesser-cta">See Collection</a>
-      </div>
-      <div class="filmmaker flex-card">
-        <div class="container profile">
-          <img src="./assets/images/Will-filmmaker.jpg" alt="Young man in front of computer.">
+      </section>
+      <section class="featured-filmmakers">
+        <h2>Featured Filmmakers</h2>
+        <div class="filmmaker flex-card">
+          <div class="container profile">
+            <img
+              src="./assets/images/Liz-filmmaker.jpg"
+              alt="Young woman in front of film camera."
+            />
+          </div>
+          <h3>Liz Morgan</h3>
+          <a href="#" class="cta-button lesser-cta">See Collection</a>
         </div>
-        <h3>Will Wandertrust</h3>
-        <a href="#" class="cta-button lesser-cta">See Collection</a>
-      </div>
-      <div class="flex-card get-the-app">
-        <div class="logo-glasses">
-          <img src="./assets/images/Logo Glasses.svg" alt="null">
+        <div class="filmmaker flex-card">
+          <div class="container profile">
+            <img
+              src="./assets/images/Will-filmmaker.jpg"
+              alt="Young man in front of computer."
+            />
+          </div>
+          <h3>Will Wandertrust</h3>
+          <a href="#" class="cta-button lesser-cta">See Collection</a>
         </div>
-        <p>Like to watch on the go?</p>
-        <a href="#" class="cta-button ">Get The App</a>
+        <div class="flex-card get-the-app">
+          <div class="logo-glasses">
+            <img src="./assets/images/logo-glasses.svg" alt="null" />
+          </div>
+          <p>Like to watch on the go?</p>
+          <a href="#" class="cta-button">Get The App</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./assets/images/squareeyes-logo.svg" alt="SquareEyes Logo"
+        /></a>
       </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="logo">
-      <a href="index.html"><img src="./assets/images/squareeyes-logo.svg" alt="SquareEyes Logo"></a>
-    </div>
-    <a href="contact.html">Contact us</a>
-    <a href="about.html">About us</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Contact Policy</a>
-  </footer>
-</body>
+      <a href="contact.html">Contact us</a>
+      <a href="about.html">About us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Policy</a>
+    </footer>
+  </body>
 </html>
