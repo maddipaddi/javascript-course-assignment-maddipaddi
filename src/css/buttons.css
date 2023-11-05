@@ -12,4 +12,5 @@
 
 .lesser-cta {
   background-color: var(--color-accent-variation);
+  color: var(--color-primary);
 }
