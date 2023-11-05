@@ -50,3 +50,14 @@
   object-fit: cover;
   border-radius: 0.5rem;
 }
+
+.spaced {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+
+.border {
+  border-top: solid;
+  padding: 1rem 0;
+}

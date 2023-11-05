@@ -1,12 +1,13 @@
 .cta-button {
-  background-color: var(--color-accent);
-  color: var(--color-primary);
+  box-shadow: var(--drop-shadow-accent);
   align-self: center;
+  margin-top: 1.5rem;
   padding: 0.5rem 0.75rem;
+  background-color: var(--color-accent);
   border-radius: 1em;
   font-size: 1em;
   font-weight: bold;
-  box-shadow: var(--drop-shadow-accent);
+  color: var(--color-primary);
 }
 
 .lesser-cta {

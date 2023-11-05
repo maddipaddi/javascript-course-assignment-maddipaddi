@@ -18,6 +18,7 @@ select {
   padding: 0.5rem 1rem;
   margin-bottom: 0.75rem;
   border-radius: 0.5rem;
+  max-width: fit-content;
 }
 
 textarea {
@@ -33,4 +34,8 @@ textarea {
 
 button {
   border: none;
+}
+
+.center {
+  align-items: center;
 }
