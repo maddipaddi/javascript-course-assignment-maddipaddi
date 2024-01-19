@@ -32,25 +32,25 @@ The following pages are not required to complete this assignment, but help to im
 - My Profile
 
 ## Process
-Decide if you will use your existing project, or a fresh project.
-Open your project in GitHub Desktop and VS Code.
-Select one of the three provided endpoints from the list below.
-Checkout the API documentation for your chosen endpoint.
-Work through the requirements in JavaScript one by one.
-Test your work thoroughly and ask for peer review.
-Offer to review two other student's work.
-Make any final changes, and submit for delivery.
+1. Decide if you will use your existing project, or a fresh project.
+2. Open your project in GitHub Desktop and VS Code.
+3. Select one of the three provided endpoints from the list below.
+4. Checkout the API documentation for your chosen endpoint.
+5. Work through the requirements in JavaScript one by one.
+6. Test your work thoroughly and ask for peer review.
+7. Offer to review two other student's work.
+8. Make any final changes, and submit for delivery.
 
 ## Important Features
 This list is a non-exhaustive list of important things to keep in mind before delivery:
-Errors should be handled for the user, such that they are alerted when something goes wrong like an API call.
-A loading indicator should be shown to the user whenever they are waiting for an asynchronous action to finish.
-There should be no hardcoded product data in your final submission.
-Although the focus on marking is on JavaScript, the site still needs to be accessible and usable for the user. If we cannot access functionality that has been coded, it will be marked as if the coding was not done.
-Use `async` instead of `then` syntax for asynchronous actions.
-Remove all console.log statements before delivery.
+- Errors should be handled for the user, such that they are alerted when something goes wrong like an API call.
+- A loading indicator should be shown to the user whenever they are waiting for an asynchronous action to finish.
+- There should be no hardcoded product data in your final submission.
+- Although the focus on marking is on JavaScript, the site still needs to be accessible and usable for the user. If we cannot access functionality that has been coded, it will be marked as if the coding was not done.
+- Use `async` instead of `then` syntax for asynchronous actions.
+- Remove all console.log statements before delivery.
 
 ## Delivery
-GitHub repository with JavaScript code in the default (main/master) branch
-Written reflection on the CA process
+- GitHub repository with JavaScript code in the default (main/master) branch
+- Written reflection on the CA process
 
