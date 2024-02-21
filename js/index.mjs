@@ -1,10 +1,11 @@
 
 import { API_SQUARE_EYES } from "./common/constants.mjs";
 import { doFetch } from "./utils/doFetch.mjs";
-
+import { router } from "./utils/routing.mjs";
 
 async function main () {
     try {
+      await router();
       const response = await doFetch(API_SQUARE_EYES);
       const movies = response.data;
       displayMovies(movies);
@@ -14,11 +15,8 @@ async function main () {
     }
 }
 
-main(); 
+main();
 
-// create a list of movies on the homepage: 
-// should include title, image, and price
-// and buy button
 function createMovieListContent(movie){
     
     const movieTitle = document.createElement("h3");
@@ -32,7 +30,9 @@ function createMovieListContent(movie){
     moviePrice.textContent = `Price: ${movie.price} NOK`; 
 
     const seeMoreButton = document.createElement("a"); 
-    seeMoreButton.setAttribute("href", "");
+    seeMoreButton.setAttribute("href", "/product.html");
+    seeMoreButton.classList.add("cta-button");
+    seeMoreButton.classList.add("lesser-cta");
     seeMoreButton.textContent = "See more";
 
     const movieProduct = document.createElement("div");
@@ -53,8 +53,4 @@ function displayMovies(movies){
 
 
 
-// create a product details page: 
-// should include title, description, image, genre, price, onsale, discountedPrice, rating, released, tags (favorite..?)
-function createProductPage() {
 
-}

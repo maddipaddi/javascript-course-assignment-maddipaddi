@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Confirmation - SquareEyes</title>
+    <title>Oppenheimer - SquareEyes</title>
     <meta
       name="description"
-      content="Confirmation on your purchase, start watching immediately."
+      content="Product details for the movie Oppenheimer."
     />
     <link
       rel="icon"
@@ -47,7 +47,7 @@
             >
           </li>
           <li>
-            <a href="movies.html"
+            <a href="movies.html" class="current"
               ><i class="fa-solid fa-film"></i
               ><span class="text">Movies</span></a
             >
@@ -83,47 +83,13 @@
             ><i class="fa-solid fa-circle-user"></i
           ></a>
         </div>
-        <div class="cart-icon current">
+        <div class="cart-icon">
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </div>
     </header>
     <main>
-      <section class="flex">
-        <h1>Confirmation</h1>
-        <section class="flex-card">
-          <h2>Thank you!</h2>
-          <p>
-            Your payment went through, and the movie is added to your account
-            under the section “My movies”.
-          </p>
-          <p>
-            You can start streaming immediately, or download to watch offline
-            later.
-          </p>
-          <p>We hope you enjoy watching Oppenheimer!</p>
-          <a href="" class="cta-button">Watch now</a>
-        </section>
-        <section class="flex-card">
-          <h2>Order Summary</h2>
-          <div class="flex">
-            <div class="product">
-              <img
-                src="./assets/images/oppenheimer_whole.jpg"
-                alt="Oppenheimer movie poster"
-              />
-            </div>
-            <div>
-              <h3>Oppenheimer</h3>
-              <p class="spaced"><span class="spaced">Subtotal</span>$9.00</p>
-              <p class="spaced"><span class="spaced">Taxes</span>$0.99</p>
-              <p class="spaced border">
-                <span class="spaced">Total</span>$9.99
-              </p>
-            </div>
-          </div>
-        </section>
-      </section>
+      <div id="product-container"></div>
     </main>
     <footer>
       <div class="footer-logo">
