@@ -1,3 +1,4 @@
+
 // Should there be a loading spinner for this action? 
 export async function doFetch(url) {
     try {

@@ -1,4 +1,5 @@
-import { setUpProductPage } from "./setUpProductPage.mjs";
+import { displayMovieDetails } from "../index.mjs";
+
 
 export async function router() {
     const url = new URL(window.location.href);
@@ -36,7 +37,7 @@ export async function router() {
 
         case "/product.html":
         case "/product/index.html":
-            setUpProductPage();
+            displayMovieDetails();
         break; 
 
         case "/search.html":
