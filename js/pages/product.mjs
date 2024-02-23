@@ -44,14 +44,21 @@ function getMovieId() {
     movieReleaseYear.textContent = `Released: ${movie.released}`;
 
     const moviePrice = document.createElement("p");
-    moviePrice.textContent = `Price: ${movie.price} NOK`; 
+    const discountedPrice = document.createElement("p");
+    if (movie.onSale) {
+        moviePrice.textContent = `Price: ${movie.price} NOK`;
+        moviePrice.classList.add("discounted-price");
+        discountedPrice.textContent = `On sale: ${movie.discountedPrice} NOK`;
+    } else {
+        moviePrice.textContent = `Price: ${movie.price} NOK`;
+    }
 
     const buyButton = document.createElement("button"); 
     buyButton.textContent = "Buy now";
     buyButton.classList.add("cta-button");
 
     const movieDetails = document.createElement("div");
-    movieDetails.append(movieTitle, movieImg, moviePrice, movieDescription, movieGenre, movieRating, movieReleaseYear, buyButton);
+    movieDetails.append(movieTitle, movieImg, moviePrice, discountedPrice, movieDescription, movieGenre, movieRating, movieReleaseYear, buyButton);
     return movieDetails;
 } 
 

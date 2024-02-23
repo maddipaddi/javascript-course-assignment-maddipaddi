@@ -3,7 +3,7 @@ import { API_SQUARE_EYES } from "../common/constants.mjs";
 import { doFetch } from "../utils/doFetch.mjs";
 
 
-async function init() {
+export async function init() {
     try {
       const response = await doFetch(API_SQUARE_EYES);
       const movies = response.data;
@@ -18,7 +18,7 @@ init();
 
 
 // Movie list on homepage functions
-function createMovieListContent(movie){
+export function createMovieListContent(movie){
     
     const movieTitle = document.createElement("h3");
     movieTitle.textContent = movie.title; 
@@ -28,7 +28,11 @@ function createMovieListContent(movie){
     movieImg.classList.add("movie-list-images");
 
     const moviePrice = document.createElement("p");
-    moviePrice.textContent = `Price: ${movie.price} NOK`; 
+    if (movie.onSale) {
+        moviePrice.textContent = `On sale: ${movie.discountedPrice} NOK`;
+    } else {
+        moviePrice.textContent = `Price: ${movie.price} NOK`;
+    }
 
     const seeMoreButton = document.createElement("a"); 
     seeMoreButton.setAttribute("href", `/product.html?id=${movie.id}`);
@@ -41,9 +45,8 @@ function createMovieListContent(movie){
     return movieProduct;
 }
 
-function displayMovies(movies){
+export function displayMovies(movies){
     const movieListContainer = document.getElementById("movie-list-container");
-    console.log(movieListContainer);
     movies.forEach(movie => {
        
        movieListContainer.appendChild(createMovieListContent(movie)); 
