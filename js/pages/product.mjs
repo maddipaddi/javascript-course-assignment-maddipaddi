@@ -1,8 +1,9 @@
 import { API_SQUARE_EYES } from "../common/constants.mjs";
-import { doFetch } from "../utils/doFetch.mjs";
+import { doFetch} from "../utils/doFetch.mjs";
+import { addToCart} from "../utils/addToCart.mjs";
 
 
-async function init() {
+export async function init() {
     try {
       displayMovieDetails();
     } catch (error) {
@@ -19,7 +20,7 @@ function getMovieId() {
     return movieId;
 } 
 
-    async function renderMovieDetails() {
+export async function renderMovieDetails() {
     const response = await doFetch(API_SQUARE_EYES);
     const movies = response.data;
     const movieId = getMovieId();
@@ -53,16 +54,17 @@ function getMovieId() {
         moviePrice.textContent = `Price: ${movie.price} NOK`;
     }
 
-    const buyButton = document.createElement("button"); 
-    buyButton.textContent = "Buy now";
-    buyButton.classList.add("cta-button");
-
+    const addToCartButton = document.createElement("button"); 
+    addToCartButton.textContent = "Add to cart";
+    addToCartButton.classList.add("add-to-cart-button");
+    addToCartButton.classList.add("cta-button");
+   
     const movieDetails = document.createElement("div");
-    movieDetails.append(movieTitle, movieImg, moviePrice, discountedPrice, movieDescription, movieGenre, movieRating, movieReleaseYear, buyButton);
+    movieDetails.append(movieTitle, movieImg, moviePrice, discountedPrice, movieDescription, movieGenre, movieRating, movieReleaseYear, addToCartButton);
     return movieDetails;
 } 
 
-    async function displayMovieDetails(){
+async function displayMovieDetails(){
     const displayMovieContainer = document.getElementById("display-movie-container");
     const movieDetails = await renderMovieDetails();
     displayMovieContainer.append(movieDetails);

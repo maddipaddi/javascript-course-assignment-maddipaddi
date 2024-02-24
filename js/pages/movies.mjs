@@ -17,24 +17,27 @@ async function init() {
 init();
 
 
-// Genre filter 
-function handleGenreFilter(e) {
+// Filtering 
+
+function handleFiltering() {
     const movieListContainer = document.getElementById("movie-list-container");
-    movieListContainer.innerHTML = "";
-    const selectedGenre = e.target.value;
-    if (selectedGenre === "all") {
-        displayMovies(movies);
-    } else {
-        const filteredMovies = selectedGenre === "all" ? movies : movies.filter(movie => movie.genre === selectedGenre);
-    displayMovies(filteredMovies);
+    movieListContainer.innerHTML = '';
+
+    const selectedGenre = genreDropdownList.value;
+    const selectedRating = ratingDropdownList.value;
+
+    let filteredMovies = movies;
+
+    if (selectedGenre !== "all") {
+        filteredMovies = filteredMovies.filter(movie => movie.genre === selectedGenre);
     }
+    
+        if (selectedRating !== "all") {
+        filteredMovies = filteredMovies.filter(movie => convertMovieRating(movie) === selectedRating);
+    }
+
+    displayMovies(filteredMovies);
 }
-
-const genreDropdownList = document.getElementById("genre");
-genreDropdownList.addEventListener("change", handleGenreFilter);
-
-
-// Rating filter
 
 function convertMovieRating(movie) {
     if (movie.rating >= 8 && movie.rating <= 10) {
@@ -48,19 +51,7 @@ function convertMovieRating(movie) {
     }
 }
 
-function handleRatingFilter(e) {
-    const movieListContainer = document.getElementById("movie-list-container");
-    movieListContainer.innerHTML = "";
-    const selectedRating = e.target.value;
-    let filteredMovies;
-    if (selectedRating === "all") {
-        displayMovies(movies);
-    } else {
-        filteredMovies = movies.filter(movie => convertMovieRating(movie) === selectedRating);
-        displayMovies(filteredMovies);
-    }
-}
-
+const genreDropdownList = document.getElementById("genre");
+genreDropdownList.addEventListener("change", handleFiltering);
 const ratingDropdownList = document.getElementById("imbd-ratings");
-ratingDropdownList.addEventListener("change", handleRatingFilter);
-
+ratingDropdownList.addEventListener("change", handleFiltering);
