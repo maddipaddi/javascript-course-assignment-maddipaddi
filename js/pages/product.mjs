@@ -58,7 +58,10 @@ export async function renderMovieDetails() {
     addToCartButton.textContent = "Add to cart";
     addToCartButton.classList.add("add-to-cart-button");
     addToCartButton.classList.add("cta-button");
-   
+    addToCartButton.addEventListener("click", () => {
+        addToCart(movie);
+    });
+
     const movieDetails = document.createElement("div");
     movieDetails.append(movieTitle, movieImg, moviePrice, discountedPrice, movieDescription, movieGenre, movieRating, movieReleaseYear, addToCartButton);
     return movieDetails;
