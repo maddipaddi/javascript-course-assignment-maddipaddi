@@ -5,7 +5,7 @@ return cart;
 }
 
 
-function getCart() {
+export function getCart() {
     let cart = JSON.parse(localStorage.getItem("cart")); 
     if (!cart) {
         createCart();
@@ -21,4 +21,4 @@ export function addToCart(movie) {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-//Update quantity
+//Add an update quantity if/when time
