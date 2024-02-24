@@ -10,12 +10,15 @@ function getCart() {
     if (!cart) {
         createCart();
     }
-    console.log(cart);
     return cart; 
 }
 
 
 export function addToCart(movie) {
-    const cart = getCart();
+    let cart = getCart();
     cart.push(movie);
+    console.log(cart);
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+//Update quantity
