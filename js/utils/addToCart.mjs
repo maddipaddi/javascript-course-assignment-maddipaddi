@@ -1,3 +1,4 @@
+
 function createCart(){
 let cart = [];
 localStorage.setItem("cart", JSON.stringify(cart));

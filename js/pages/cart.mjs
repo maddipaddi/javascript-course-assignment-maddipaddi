@@ -1,7 +1,7 @@
 import { getCart, removeFromCart } from "../utils/addToCart.mjs";
 
 
-function displayCart(movie) {
+export function displayCart(movie) {
     const movieTitle = document.createElement("h3");
     movieTitle.textContent = movie.title; 
 
@@ -22,6 +22,7 @@ function displayCart(movie) {
     removeButton.classList.add("lesser-cta");
     removeButton.addEventListener("click", () => {
         removeFromCart(movie);
+        movieProduct.remove();
     });
 
     const movieProduct = document.createElement("div");
@@ -31,11 +32,12 @@ function displayCart(movie) {
 }
 
 function renderCart() {
-    const displayMovieContainer = document.getElementById("display-movie-container");
+    const cartContainer = document.getElementById("cart-container");
     let cart = getCart();
     cart.forEach(movie => {
-        displayMovieContainer.append(displayCart(movie));
+        cartContainer.append(displayCart(movie));
     });
 }
 
 renderCart(); 
+
