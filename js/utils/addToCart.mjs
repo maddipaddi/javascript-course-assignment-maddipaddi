@@ -41,7 +41,5 @@ export function calculateCartTotalCost() {
         let currentMoviePrice = movie.onSale ? movie.discountedPrice : movie.price;
         return accumulator + currentMoviePrice;
     }, initialValue);
-
-    console.log(cartTotalCost);
     return cartTotalCost;
 }

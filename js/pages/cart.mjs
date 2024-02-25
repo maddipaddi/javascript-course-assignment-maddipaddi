@@ -32,7 +32,7 @@ export function displayCart(movie) {
     return movieProduct;
 }
 
-function renderCart() {
+    function renderCart() {
     const cartContainer = document.getElementById("cart-container");
     let cart = getCart();
     cart.forEach(movie => {
@@ -42,13 +42,13 @@ function renderCart() {
 
 renderCart(); 
 
-function displayOrderSummary() {
+export function displayOrderSummary() {
     let cart = getCart();
     const movieTitles = cart.map(movie => movie.title).join(", ");
     const cartMovies = document.querySelector(".movies-in-cart");
     cartMovies.textContent = `Movies: ${movieTitles}`;
     const totalCost = document.querySelector(".total-cost");
-    totalCost.textContent = `Price: ${calculateCartTotalCost()} NOK`;
+    totalCost.textContent = `Total price: ${calculateCartTotalCost()} NOK`; 
 }
 
 displayOrderSummary();
@@ -56,10 +56,9 @@ displayOrderSummary();
 function checkoutCart() {
 const paymentContainer = document.querySelector(".payment");
 const checkoutButton = document.createElement("a");
-checkoutButton.setAttribute("href", `/checkout.html`);
+checkoutButton.setAttribute("href", `/checkout-confirmation.html`);
 checkoutButton.classList.add("cta-button");
 checkoutButton.textContent = "Checkout";
-//checkoutButton.addEventListener("click", );
 paymentContainer.append(checkoutButton);
 }
 

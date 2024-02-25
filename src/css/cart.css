@@ -18,3 +18,7 @@
   flex-grow: 0;
   flex-basis: 15rem;
 }
+
+.confirmation-message {
+  max-width: 55rem;
+}
