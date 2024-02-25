@@ -17,8 +17,14 @@ export function getCart() {
 
 export function addToCart(movie) {
     let cart = getCart();
+    const currentMovieId = movie.id;
+    const movieAlreadyAdded = cart.some(movie => movie.id === currentMovieId);
+    if (movieAlreadyAdded) {
+        alert("You have already added this movie to your cart.");
+    } else {
     cart.push(movie);
     localStorage.setItem("cart", JSON.stringify(cart));
+}
 }
 
 //Add an update quantity or a not add more than once function  if/when time
