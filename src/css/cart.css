@@ -1,0 +1,20 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cart-item {
+  flex-shrink: 2;
+  flex-grow: 0;
+  flex-basis: 15rem;
+}

@@ -18,6 +18,7 @@ function displayCart(movie) {
 
     const movieProduct = document.createElement("div");
     movieProduct.append(movieTitle, movieImg, moviePrice);
+    movieProduct.classList.add("cart-item")
     return movieProduct;
 }
 

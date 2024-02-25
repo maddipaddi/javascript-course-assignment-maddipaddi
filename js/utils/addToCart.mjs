@@ -21,4 +21,4 @@ export function addToCart(movie) {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-//Add an update quantity if/when time
+//Add an update quantity or a not add more than once function  if/when time
