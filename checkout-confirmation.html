@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart - SquareEyes</title>
+    <title>Checkout Confirmation - SquareEyes</title>
     <meta
       name="description"
-      content="Product details for the movie Oppenheimer."
+      content="See the contents of your cart, pay, and start watching immediately."
     />
     <link
       rel="icon"
@@ -25,7 +25,7 @@
       src="https://kit.fontawesome.com/070454e239.js"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="./js/pages/cart.mjs"></script>
+    <script type="module" src="./js/pages/checkout-confirmation.mjs"></script>
   </head>
   <body>
     <header>
@@ -83,45 +83,14 @@
             ><i class="fa-solid fa-circle-user"></i
           ></a>
         </div>
-        <div class="cart-icon">
-          <a href="cart.html" aria-label="Cart" class="current"
+        <div class="cart-icon current">
+          <a href="cart.html" aria-label="Cart"
             ><i class="fa-solid fa-cart-shopping"></i
           ></a>
         </div>
       </div>
     </header>
-    <main>
-      <section class="cart">
-        <h1>Your cart</h1>
-        <div id="cart-container" class="cart-items"></div>
-        <section>
-          <h2>Order Summary</h2>
-          <div id="order-summary">
-            <p class="movies-in-cart">Movies:</p>
-            <p class="total-cost">Total cost:</p>
-          </div>
-        </section>
-        <section class="flex-card payment">
-          <h2>Payment</h2>
-          <section class="flex-item center">
-            <h3>Card Information</h3>
-            <form>
-              <div class="flex-item">
-                <label>Card number</label>
-                <input type="number" id="number" name="number" />
-              </div>
-              <div class="flex-item">
-                <label>Expiration date</label>
-                <input type="date" id="date" name="date" />
-              </div>
-              <div class="flex-item">
-                <label>Security code</label>
-                <input type="number" id="security" name="security" />
-              </div>
-            </form>
-          </section>
-      </section>
-    </main>
+    <main></main>
     <footer>
       <div class="footer-logo">
         <a href="index.html"

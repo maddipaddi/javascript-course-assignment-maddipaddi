@@ -1,4 +1,4 @@
-import { getCart, removeFromCart } from "../utils/addToCart.mjs";
+import { calculateCartTotalCost, getCart, removeFromCart } from "../utils/addToCart.mjs";
 
 
 export function displayCart(movie) {
@@ -23,6 +23,7 @@ export function displayCart(movie) {
     removeButton.addEventListener("click", () => {
         removeFromCart(movie);
         movieProduct.remove();
+        displayOrderSummary();
     });
 
     const movieProduct = document.createElement("div");
@@ -41,3 +42,25 @@ function renderCart() {
 
 renderCart(); 
 
+function displayOrderSummary() {
+    let cart = getCart();
+    const movieTitles = cart.map(movie => movie.title).join(", ");
+    const cartMovies = document.querySelector(".movies-in-cart");
+    cartMovies.textContent = `Movies: ${movieTitles}`;
+    const totalCost = document.querySelector(".total-cost");
+    totalCost.textContent = `Price: ${calculateCartTotalCost()} NOK`;
+}
+
+displayOrderSummary();
+
+function checkoutCart() {
+const paymentContainer = document.querySelector(".payment");
+const checkoutButton = document.createElement("a");
+checkoutButton.setAttribute("href", `/checkout.html`);
+checkoutButton.classList.add("cta-button");
+checkoutButton.textContent = "Checkout";
+//checkoutButton.addEventListener("click", );
+paymentContainer.append(checkoutButton);
+}
+
+checkoutCart();

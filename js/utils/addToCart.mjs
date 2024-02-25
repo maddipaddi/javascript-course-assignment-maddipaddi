@@ -32,3 +32,16 @@ export function removeFromCart(movie) {
     console.log(cart);
     localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+export function calculateCartTotalCost() {
+    let cart = getCart();
+    const initialValue = 0;
+
+    const cartTotalCost = cart.reduce((accumulator, movie) => {
+        let currentMoviePrice = movie.onSale ? movie.discountedPrice : movie.price;
+        return accumulator + currentMoviePrice;
+    }, initialValue);
+
+    console.log(cartTotalCost);
+    return cartTotalCost;
+}
