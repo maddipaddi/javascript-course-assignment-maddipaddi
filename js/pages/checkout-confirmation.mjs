@@ -14,8 +14,12 @@ function displayConfirmation() {
     under the section “My movies”. You can start streaming immediately, or download to watch offline
     later.`
     displayConfirmation.textContent = `${confirmationMessage}`;
+    clearCart();
 }
 
 displayConfirmation();
 
-function clearCart() {}
+function clearCart() {
+    let cart = localStorage.setItem("cart", JSON.stringify([]));
+    return cart; 
+}
