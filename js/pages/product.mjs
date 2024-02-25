@@ -36,10 +36,11 @@ export async function renderMovieDetails() {
 
     const movieImg = document.createElement("img");
     movieImg.setAttribute("src", movie.image.url);
+    movieImg.classList.add("product-img");
 
     const movieDescription = document.createElement("p");
     movieDescription.textContent = movie.description; 
-    
+
     const movieGenre = document.createElement("p");
     movieGenre.textContent = `Genre: ${movie.genre}`; 
 
@@ -69,11 +70,13 @@ export async function renderMovieDetails() {
 
     const movieDetails = document.createElement("div");
     movieDetails.append(movieTitle, movieImg, moviePrice, discountedPrice, movieDescription, movieGenre, movieRating, movieReleaseYear, addToCartButton);
+    movieDetails.classList.add("product-details");
     return movieDetails;
 } 
 
 async function displayMovieDetails(){
     const displayMovieContainer = document.getElementById("display-movie-container");
+    displayMovieContainer.classList.add("product-card");
     const movieDetails = await renderMovieDetails();
     displayMovieContainer.append(movieDetails);
 }

@@ -27,8 +27,6 @@ export function addToCart(movie) {
 }
 }
 
-//Add an update quantity or a not add more than once function  if/when time
-
 export function removeFromCart(movie) {
     const movieToRemove = movie.id; 
     let cart = getCart();
