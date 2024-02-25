@@ -10,7 +10,7 @@ function displayBoughtMovies() {
 function displayConfirmation() {
     const displayConfirmation = document.querySelector(".confirmation-message");
     const orderSummary = `${displayBoughtMovies()}`;
-    const confirmationMessage = `Your payment was successful! Your order: ${orderSummary}. Your order was added to your account
+    const confirmationMessage = `Your payment was successful. Thank you for your purchase! Your order: ${orderSummary}. Your order was added to your account
     under the section “My movies”. You can start streaming immediately, or download to watch offline
     later.`
     displayConfirmation.textContent = `${confirmationMessage}`;

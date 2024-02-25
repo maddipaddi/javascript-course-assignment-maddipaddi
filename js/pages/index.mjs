@@ -11,7 +11,8 @@ export async function init() {
       const movies = response.data;
       displayMovies(movies);
     } catch (error) {
-        console.log(error);
+        console.log("An error occurred: ", error);
+        alert("An error occurred: " + "'" + error + "'." + " Please try again later.");
     } finally {
         hideLoader();
     }

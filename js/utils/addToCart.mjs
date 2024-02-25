@@ -18,7 +18,6 @@ export function getCart() {
 export function addToCart(movie) {
     let cart = getCart();
     cart.push(movie);
-    console.log(cart);
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
@@ -27,9 +26,7 @@ export function addToCart(movie) {
 export function removeFromCart(movie) {
     const movieToRemove = movie.id; 
     let cart = getCart();
-    console.log(cart);
     cart = cart.filter(item => item.id !== movieToRemove);
-    console.log(cart);
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 

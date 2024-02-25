@@ -7,12 +7,13 @@ import { hideLoader, showLoader } from "../utils/loader.mjs";
 let movies = [];
 
 async function init() {
+    showLoader();
     try {
       const response = await doFetch(API_SQUARE_EYES);
       movies = response.data;
-      showLoader();
     } catch (error) {
-        console.log(error);
+        console.log("An error occurred: ", error);
+        alert("An error occurred: " + "'" + error + "'." + " Please try again later.");
     } finally {
         hideLoader();
     }
