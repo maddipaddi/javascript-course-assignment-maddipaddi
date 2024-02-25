@@ -1,9 +1,5 @@
-/* Use import to split up your CSS into manageable chunks */
 @import url("./reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
 @import url("./variables.css");
-/* Feel free to add as many of these imports as you need */
 @import url(./header.css);
 @import url(./movie-slider.css);
 @import url(./movie-list-homepage.css);
@@ -13,6 +9,7 @@
 @import url(./footer.css);
 @import url(./product.css);
 @import url(./cart.css);
+@import url(./loader.css);
 @import url(./movies-page.css);
 @import url(./about-us.css);
 @import url(./font.css);

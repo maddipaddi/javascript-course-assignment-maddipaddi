@@ -1,13 +1,17 @@
 import { API_SQUARE_EYES } from "../common/constants.mjs";
 import { doFetch} from "../utils/doFetch.mjs";
 import { addToCart} from "../utils/addToCart.mjs";
+import { hideLoader, showLoader } from "../utils/loader.mjs";
 
 
 export async function init() {
+    showLoader();
     try {
       displayMovieDetails();
     } catch (error) {
         console.log(error);
+    } finally {
+        hideLoader();
     }
 }
 
@@ -20,7 +24,7 @@ function getMovieId() {
     return movieId;
 } 
 
-export async function renderMovieDetails() {
+export async function renderMovieDetails() { 
     const response = await doFetch(API_SQUARE_EYES);
     const movies = response.data;
     const movieId = getMovieId();

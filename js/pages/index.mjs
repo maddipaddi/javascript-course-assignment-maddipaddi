@@ -1,16 +1,19 @@
 
 import { API_SQUARE_EYES } from "../common/constants.mjs";
 import { doFetch } from "../utils/doFetch.mjs";
+import { showLoader, hideLoader } from "../utils/loader.mjs";
 
 
 export async function init() {
+    showLoader();
     try {
       const response = await doFetch(API_SQUARE_EYES);
       const movies = response.data;
       displayMovies(movies);
-      console.log(movies);
     } catch (error) {
         console.log(error);
+    } finally {
+        hideLoader();
     }
 }
 
