@@ -1,4 +1,4 @@
-import { getCart } from "../utils/addToCart.mjs";
+import { getCart, removeFromCart } from "../utils/addToCart.mjs";
 
 
 function displayCart(movie) {
@@ -16,8 +16,16 @@ function displayCart(movie) {
         moviePrice.textContent = `Price: ${movie.price} NOK`;
     }
 
+    const removeButton = document.createElement("button");
+    removeButton.innerText = "Remove";
+    removeButton.classList.add("cta-button");
+    removeButton.classList.add("lesser-cta");
+    removeButton.addEventListener("click", () => {
+        removeFromCart(movie);
+    });
+
     const movieProduct = document.createElement("div");
-    movieProduct.append(movieTitle, movieImg, moviePrice);
+    movieProduct.append(movieTitle, movieImg, moviePrice, removeButton);
     movieProduct.classList.add("cart-item")
     return movieProduct;
 }
