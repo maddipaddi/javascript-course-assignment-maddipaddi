@@ -56,7 +56,7 @@ displayOrderSummary();
 function checkoutCart() {
 const paymentContainer = document.querySelector(".payment");
 const checkoutButton = document.createElement("a");
-checkoutButton.setAttribute("href", `/checkout-confirmation.html`);
+checkoutButton.setAttribute("href", `checkout-confirmation.html`);
 checkoutButton.classList.add("cta-button");
 checkoutButton.textContent = "Checkout";
 paymentContainer.append(checkoutButton);
