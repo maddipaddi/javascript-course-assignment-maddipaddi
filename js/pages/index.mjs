@@ -39,7 +39,7 @@ export function createMovieListContent(movie){
     }
 
     const seeMoreButton = document.createElement("a"); 
-    seeMoreButton.setAttribute("href", `/product.html?id=${movie.id}`);
+    seeMoreButton.setAttribute("href", `product.html?id=${movie.id}`);
     seeMoreButton.classList.add("cta-button");
     seeMoreButton.classList.add("lesser-cta");
     seeMoreButton.textContent = "See more";
