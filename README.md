@@ -1,56 +1,41 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12633665&assignment_repo_type=AssignmentRepo)
-# JavaScript 1 Course Assignment
+# Community Science Museum
 
-## Brief
-Using your new skills writing JavaScript, create an interactive online store to display product from an API endpoint. Use one of the three provided API urls to display products in HTML and allow users to create a basket of items.
+![image](https://i.ibb.co/7WsrWY6/Square-Eyes-project.jpg)
 
-You may use your existing cross course project code as a starting point, or start a fresh project if this is not available. We recommend using an existing project as styling will not be graded, but is nice to have in the final submission.
+A video streaming website where you can purchase high-quality videos directly from the people who make them. 
+The users of this website want to purchase videos right away, which will allow them to watch it online.
+The website should emphasise that you can easily discover great collections or browse through different categories to find films.
 
-## User Stories
-- As a user, I want to view a list of products on the homepage.
-- As a user, I want to filter products by category, gender or genre.
-- As a user, I want to view a single product page with more detail.
-- As a user, I want to add a product to my basket.
-- As a user, I want to remove a product from my basket.
-- As a user, I want to view a summary of my cart on the checkout page.
-- As a user, I want to view an order-confirmation screen after checking out.
+**Slogan:** Connecting Film-Lovers
 
-## Required Pages
-The following pages are required to complete this assignment.
 
-- Home Page containing product list `/index.html`
-- Product Page showing all details of a specific product `/product/index.html`
-- Checkout Page showing all items in the basket `/checkout/index.html`
-- Confirmation Page showing a thank you message `/checkout/confirmation/index.html`
+**Target audience:** Aged 25 to 40 and are interested in cinema. They enjoy watching interesting and high-quality films.
 
-## Optional Pages
-The following pages are not required to complete this assignment, but help to improve the realism for those with extra time.
 
-- Category Pages (e.g. Male/Female Clothing, Movie Genres)
-- Terms and Conditions page (this may be AI generated)
-- Privacy Policy (this may be AI generated)
-- My Profile
+## Description
 
-## Process
-1. Decide if you will use your existing project, or a fresh project.
-2. Open your project in GitHub Desktop and VS Code.
-3. Select one of the three provided endpoints from the list below.
-4. Checkout the API documentation for your chosen endpoint.
-5. Work through the requirements in JavaScript one by one.
-6. Test your work thoroughly and ask for peer review.
-7. Offer to review two other student's work.
-8. Make any final changes, and submit for delivery.
+This was a cross course assignment, that started as a design CA, then evolved into an HTML&CSS CA, and finally we added JavaScript to create an interactive online store to display products from an API endpoint.
+The goal was to design and build a modern, accessible and responsive web presence for the client (fictional) - SquareEyes.
 
-## Important Features
-This list is a non-exhaustive list of important things to keep in mind before delivery:
-- Errors should be handled for the user, such that they are alerted when something goes wrong like an API call.
-- A loading indicator should be shown to the user whenever they are waiting for an asynchronous action to finish.
-- There should be no hardcoded product data in your final submission.
-- Although the focus on marking is on JavaScript, the site still needs to be accessible and usable for the user. If we cannot access functionality that has been coded, it will be marked as if the coding was not done.
-- Use `async` instead of `then` syntax for asynchronous actions.
-- Remove all console.log statements before delivery.
+Apart from CSS following DRY principles and semantic HTML, some JavaScript functionality includes: 
 
-## Delivery
-- GitHub repository with JavaScript code in the default (main/master) branch
-- Written reflection on the CA process
+- Filtering products.
+- Viewing a single product page with more detail.
+- Adding and removig a products to/from cart.
+- Viewing a summary of the cart on the checkout page.
+- Viewing an order-confirmation screen after checking out.
 
+
+## Built With
+
+- HTML
+- CSS
+- JavaScript
+
+***[Live site](https://maddipaddi.github.io/javascript-course-assignment-maddipaddi/)***
+
+## Contact
+
+[My LinkedIn page](https://www.linkedin.com/in/madelen-sletteberg-17a435257/)
+
+Email: madelen.sletteberg@gmail.com
